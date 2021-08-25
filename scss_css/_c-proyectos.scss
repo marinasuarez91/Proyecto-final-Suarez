@@ -1,0 +1,106 @@
+@media (min-width: 992px) {
+    .galeria--container1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .galeria--container2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .img__proyecto--container {
+        width: 33vw;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .proyecto__img {
+        margin: auto;
+        transition: opacity 1s;
+        max-width: 33vw;
+        height: 450px;
+        object-fit: cover;
+        z-index: 10;
+        padding: 10px;
+    }
+
+    .proyecto__img:hover {
+        opacity: 0.5;
+    }
+
+    .proyecto__name {
+        width: 33vw;
+        height: 450px;
+        position: absolute;
+        z-index: -1;
+        padding: 10px;
+        padding-top: 200px;
+        margin: auto;
+    }
+
+    .proyecto__name--txt {
+        text-align: center;
+        color: $color1;
+        font-family: $font2;
+        font-size: $titpc;
+        font-weight: 700;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .galeria--container1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria--container2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img__proyecto--container {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    .proyecto__img {
+        margin: auto;
+        transition: opacity 1s;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+        z-index: 1;
+        padding: 10px;
+    }
+
+    .proyecto__img:hover {
+        opacity: 0.5;
+    }
+
+    .proyecto__name {
+        width: 50vw;
+        height: 450px;
+        position: absolute;
+        z-index: -1;
+        padding: 10px;
+        padding-top: 200px;
+        margin: auto;
+    }
+
+    .proyecto__name--txt {
+        text-align: center;
+        color: $color1;
+        font-family: $font2;
+        font-size: $titmob;
+        font-weight: 700;
+    }
+}

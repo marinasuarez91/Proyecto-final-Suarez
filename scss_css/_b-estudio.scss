@@ -1,0 +1,141 @@
+@media (min-width: 992px) {
+    .mainAside--container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img--container {
+        width: 65vw;
+        height: 998px;
+    }
+      
+    .estudio__img {
+        margin: 0px;
+        transition: opacity 1s;
+        max-width: 65vw;
+        height: 998px;
+        object-fit: cover;
+        z-index: 1;
+    }
+      
+    .estudio__img:hover {
+        opacity: 0.5;
+    }
+
+    h3 {
+        margin: 0px;
+        text-align: center;
+        color: $color4;
+        font-family: $font2;
+        font-size: $titpc;
+        font-style: normal;
+        padding: 10px;
+        overflow: hidden;
+    }
+      
+    .estudio__text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: 998px;
+        margin: auto;
+        text-align: center;
+        background-color: $color2;
+        color: $color4;
+        font-family: $font2;
+        font-size: $textpc;
+        font-style: normal;
+        padding: 250px 10px 200px 10px;
+        overflow: hidden;
+        max-width: 35vw;
+    }
+
+    .article--container {
+        display: none;
+    }
+
+    .servicios--link {
+        text-decoration: none;
+        color: $color1;
+    }
+
+    .servicios--hover:hover {
+        color: $color1;
+        font-weight: 700;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .mainAside--container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img--container {
+        display: flex;
+        align-items: center;
+    }
+      
+    .estudio__img {
+        margin: 0px;
+        transition: opacity 1s;
+        min-width: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+      
+    .estudio__img:hover {
+        opacity: 0.5;
+    }
+      
+    .estudio__text {
+        margin: 0px;
+        text-align: center;
+        background-color: $color2;
+        color: $color4;
+        font-family: $font2;
+        font-size: $textmob;
+        font-style: normal;
+        padding: 10px 10px 1px 10px;
+        overflow: hidden;
+    }
+
+    h3 {
+        margin: 0px;
+        text-align: center;
+        color: $color1;
+        font-family: $font2;
+        font-size: $titmob;
+        font-style: normal;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .article--container {
+        max-height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .article__img {
+        min-width: 120px;
+        object-fit: cover;
+    }
+
+    .article__img:hover {
+        opacity: 0.5;
+    }
+
+    .servicios--link {
+        text-decoration: none;
+        color: $color1;
+    }
+
+    .servicios--hover:hover {
+        color: $color1;
+        font-weight: 700;
+    }
+}
